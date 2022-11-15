@@ -119,12 +119,17 @@ main {
 
 .oferta {
   background-color: rgb(132, 98, 53);
+  border: 1% black solid;
+  border-radius: 4%;
 }
 .oferta h1 {
   text-align: center;
   color: red;
   font-size: 60px;
   width: 100%;
+}
+.oferta .caja {
+  margin-left: auto;
 }
 
 .iconos {
