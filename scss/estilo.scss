@@ -1,0 +1,78 @@
+@import "header";
+@import "envio";
+@import "producto";
+@import "footer";
+@import "contacto";
+@import "quienes-somos";
+
+/*caja-producto*/
+.destacados{
+    width: 100%;
+    font-size: 300%;
+    color: red;
+  text-align: center;
+  }
+  section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 10%;
+  }
+  .caja{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 0, 0);
+    border: 3px rgb(0, 0, 0) solid;
+    width: 32%;
+    border-radius: 5%;
+    margin: 0.3%;
+  }
+  .imagen{
+    width: 100%;
+    border-radius: 5%;
+  }
+  .precio{
+  display: inline;
+  }
+  .agregar{
+    background-color: green;
+    border-radius: 40%; 
+    text-decoration: none;
+    font-size: 150%;
+    width: 50%;
+    padding: 5px;
+    text-align: center;
+  }
+  .nombre{
+    width: 100%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 300%;
+    height: 5%;
+  }
+  .pya{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5%;
+  }
+  .cantidad{
+    width: 12%;
+  }
+  .cyp{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    margin: 2.5%;
+    width: 100%;
+   .precio{
+   
+    color: green;
+   }
+  }
+  @media(max-width:768px){
+    .caja{
+      width: 80%;
+    } 
+  
+    }
