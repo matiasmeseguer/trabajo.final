@@ -12,7 +12,7 @@
 /*header*/
 header{
   height: 100px;
-  background-color: rgb(218, 255, 5);
+  background-color: rgba(255, 255, 255, 0.862);
   padding: 0 50px;
   color: white;
   display: flex;
@@ -53,6 +53,7 @@ color: aqua;
 @media(max-width:768px){
   .enlaces{
     display: none;
+    text-decoration: none;
   } 
  }
 

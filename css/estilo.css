@@ -14,7 +14,7 @@
 /*header*/
 header {
   height: 100px;
-  background-color: rgb(218, 255, 5);
+  background-color: rgba(255, 255, 255, 0.862);
   padding: 0 50px;
   color: white;
   display: flex;
@@ -61,6 +61,7 @@ header {
 @media (max-width: 768px) {
   .enlaces {
     display: none;
+    text-decoration: none;
   }
 }
 @media (max-width: 768px) {
@@ -117,14 +118,89 @@ main {
   margin: 5%;
 }
 
+/*caja-producto*/
+section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 10%;
+}
+
+.caja {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(177, 175, 175);
+  border: 3px rgb(0, 0, 0) solid;
+  width: 32%;
+  border-radius: 5%;
+  margin: 0.3%;
+}
+
+.imagen {
+  width: 100%;
+  height: 50%;
+  border-radius: 5%;
+}
+
+.precio {
+  display: inline;
+  color: blue;
+}
+
+.agregar {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 100%;
+  width: 30%;
+  padding: 5px;
+  text-align: center;
+}
+
+.nombre {
+  width: 100%;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 200%;
+  height: 5%;
+}
+
+.pya {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.5%;
+}
+
+.cantidad {
+  width: 12%;
+}
+
+.cyp {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2.5%;
+  width: 100%;
+  text-align: center;
+}
+.cyp .precio {
+  color: green;
+}
+
+@media (max-width: 768px) {
+  .caja {
+    width: 80%;
+  }
+}
 .oferta {
-  background-color: rgb(132, 98, 53);
+  background-color: rgb(87, 87, 87);
   border: 1% black solid;
   border-radius: 4%;
 }
 .oferta h1 {
   text-align: center;
-  color: red;
+  color: blue;
   font-size: 60px;
   width: 100%;
 }
@@ -269,7 +345,7 @@ body {
 
 .parrafo {
   width: 60%;
-  height: 500%;
+  height: 600%;
   padding: 20px 20px;
   font-size: 15px;
   line-height: 1.5;
@@ -281,7 +357,7 @@ body {
 }
 
 .parrafo img {
-  width: 50%;
+  width: 30%;
   border-radius: 5px;
   float: left;
   margin-right: 15px;
@@ -295,88 +371,19 @@ body {
 .destacados {
   width: 100%;
   font-size: 300%;
-  color: red;
+  color: blue;
   text-align: center;
 }
 
-/*caja-producto*/
-.destacados {
+.fotoInicio {
   width: 100%;
+}
+
+.p-d {
+  text-align: center;
+  margin-top: 5%;
+  color: blue;
   font-size: 300%;
-  color: red;
-  text-align: center;
-}
-
-section {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: 10%;
-}
-
-.caja {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: rgb(255, 0, 0);
-  border: 3px rgb(0, 0, 0) solid;
-  width: 32%;
-  border-radius: 5%;
-  margin: 0.3%;
-}
-
-.imagen {
-  width: 100%;
-  border-radius: 5%;
-}
-
-.precio {
-  display: inline;
-}
-
-.agregar {
-  background-color: green;
-  border-radius: 40%;
-  text-decoration: none;
-  font-size: 150%;
-  width: 50%;
-  padding: 5px;
-  text-align: center;
-}
-
-.nombre {
-  width: 100%;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  font-size: 300%;
-  height: 5%;
-}
-
-.pya {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 2.5%;
-}
-
-.cantidad {
-  width: 12%;
-}
-
-.cyp {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 2.5%;
-  width: 100%;
-}
-.cyp .precio {
-  color: green;
-}
-
-@media (max-width: 768px) {
-  .caja {
-    width: 80%;
-  }
 }
 
 /*# sourceMappingURL=estilo.css.map */
